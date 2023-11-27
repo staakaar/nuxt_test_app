@@ -12,12 +12,28 @@
             :items="items"
             class="mt-12"
             height="600"
+            @click:row="openDrawer"
         ></VDataTable>
     </VSheet>
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
 
+const emit = defineEmits(["openDetailDrawer"])
+
+/**
+    ドロワーを開く
+    @param event
+    @param row
+*/
+function openDrawer(event: Event, row: any): void {
+    console.log('test', row.item)
+    emit("openDetailDrawer", row.item)
+}
+
+// const { data, pending, error, refresh } = await useFetch(``, {})
+/** useFetchでデータ取得 */
 const items = [
     {
         id: 1,

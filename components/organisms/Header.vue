@@ -1,5 +1,5 @@
 <template>
-    <VAppBar color="primary" height="60" style="position: unset;">
+    <VAppBar color="gray" height="60" style="position: unset;">
         <template #prepend>
             <VAppBarNavIcon></VAppBarNavIcon>
         </template>
