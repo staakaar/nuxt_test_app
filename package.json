@@ -10,13 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@intlify/vue-i18n-bridge": "^1.0.1",
+    "@intlify/vue-router-bridge": "^1.0.1",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "^8.0.0-rc.6",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "nuxt": "^3.8.1",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.8",
+    "vue-i18n-routing": "^1.1.4",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.2"
   },
